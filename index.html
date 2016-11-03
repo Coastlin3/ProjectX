@@ -99,8 +99,11 @@
           </div>
           <!-- 自定义文件选择 代码区开始 -->
           <a href="javascript:" class="input_file_wrp">选择文件
-            <input type="file" name="" id="">
+            <input type="file" name="" id="" onchange="previewImage(this,'preview_wrp')">
           </a>
+          <div class="upload_preview_wrp" id="preview_wrp">
+            <img onload="fitImg(this,200,200)" src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png">
+          </div>
           <!-- 自定义文件选择 代码区结束 -->
 
           <h1>自定义Select</h1>
